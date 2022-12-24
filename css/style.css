@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-color: rgb(241 234 234 / 21%);
+    
+}
+
+.alinear{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnnav{
+    background-color: #7c15cf;
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btnnav img{
+    width: 200px;
+    
+}
+
+/* .btnDF{
+    display: block;
+} */
+
+nav{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+     background-color: #7c15cf;
+     position: fixed;
+     z-index: 1;
+     width: 100%;
+     padding-top: 2.5rem;
+}
+
+nav ul{
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.bgc{
+    border: none;
+    background-color: #7c15cf;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+nav ul li a:hover{
+    padding: .5rem;
+    background-color: rgb(26 111 209);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.inicio{
+    background-image: url(../img/fondo\ port.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoPresentacion{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+}
+
+.presentacion{
+    padding: 1rem;
+}
+
+h1{
+    font-family: 'Lobster Two', cursive;
+}
+
+.textoPresentacion p{
+    text-align: end;
+}
+
+.textoPresentacion img{
+    width: 50%;
+}
+
+h2{
+    margin: 1rem;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(26 111 209);
+}
+
+.sobreMi{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.sobreMi p{
+    margin: 2rem 2rem 0;
+}
+
+.sobreMi img{
+    margin: .5rem;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 0 0 0 15rem;
+    -webkit-border-radius: 0 0 0 15rem;
+    -moz-border-radius: 0 0 0 15rem;
+    -ms-border-radius: 0 0 0 15rem;
+    -o-border-radius: 0 0 0 15rem;
+} 
+
+/* skills */
+.skills div{
+    flex-wrap: wrap;
+}
+
+.skills img{
+    width: 130px;
+    padding: 1rem;
+}
+
+.skills img:nth-child(4){
+    padding: 0;
+}
+/* .skills img:first-child{
+    animation-name: subirBajar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode:forwards;
+    
+}
+
+.skills img:nth-child(2){
+    animation-name: subirBajar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.skills img:nth-child(3){
+    animation-name: subirBajar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.skills img:nth-child(4){
+    animation-name: subirBajar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.skills img:nth-child(5){
+    animation-name: subirBajar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.skills img:nth-child(6){
+    animation-name: subirBajar;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes subirBajar{
+    0%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+    
+    100%{
+        transform: translateY(25px);
+        -webkit-transform: translateY(25px);
+        -moz-transform: translateY(25px);
+        -ms-transform: translateY(25px);
+        -o-transform: translateY(25px);
+    }
+} */
+
+/* portafolio */
+.portafolio{
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: 1rem;
+}
+
+.tarjeta img{
+    width: 100%;
+}
+
+h3{
+    background-color: rgba(129, 29, 212, 0.88);
+    text-align: center;
+    margin: -.2rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    color: #e3e3e3;
+}
+
+.descripcion{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1.5rem;
+    background-color: rgba(129, 29, 212, 0.88);
+    color: white;
+    /* transform: rotatey(0deg);
+    -webkit-transform: rotatey(0deg);
+    -moz-transform: rotatey(0deg);
+    -ms-transform: rotatey(0deg);
+    -o-transform: rotatey(0deg); */
+    opacity: 0;
+}
+
+.descripcion:hover{
+    animation-name: voltear;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+
+@keyframes voltear{
+    /* 0%{
+        
+        transform: rotateY(10deg);
+        -webkit-transform: rotateY(10deg);
+        -moz-transform: rotateY(10deg);
+        -ms-transform: rotateY(10deg);
+        -o-transform: rotateY(10deg);
+} */
+
+    100%{
+        transform: rotateY(365deg);
+        -webkit-transform: rotateY(365deg);
+        -moz-transform: rotateY(365deg);
+        -ms-transform: rotateY(365deg);
+        -o-transform: rotateY(365deg);
+}
+} 
+
+/* footer */
+footer img{
+    width: 3.5rem;
+}
+
+.github{
+    font-size: 4rem;
+    color: black;
+}
+
+.linkedinTelegram{
+    justify-content: space-around;
+}
+
+.autor p{
+    color: rgb(66, 66, 66);
+    font-size: 14px;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+
+
+@media screen and (min-width:820px) {
+    .btnnav{
+        width: 100px;
+    }
+    .btnnav a img{
+        margin-left: 8rem;
+    }
+    .btnDF{
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        height: 3.5rem;
+        padding-top: 0;
+    }
+    nav ul{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .textoPresentacion{
+        flex-direction: row-reverse;
+        top: 160px;
+        font-size: 3rem;
+    }
+    
+    .sobreMi{
+        flex-direction: row-reverse;
+        width: 750px;
+    }
+    .tarjeta{
+        margin: 1.5rem;
+    }
+} 
+
+/* header 31px */
+
