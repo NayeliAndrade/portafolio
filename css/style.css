@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(241 234 234 / 21%);
+}
+
+.align {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar {
+    background-color: #7c15cf;
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.navBar img {
+    width: 200px;
+    padding-top: 14px;
+}
+
+.btnMenuBurger {
+    background-color: #5ea0c9;
+    padding: 0.2rem;
+    margin: 7px;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7c15cf;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding-top: 2.5rem;
+}
+
+nav ul {
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.bgcMoon {
+    border: none;
+    background-color: #7c15cf;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+nav ul li a:hover {
+    border-bottom: 5px solid rgb(26 111 209);
+}
+
+.bgPresentation {
+    background-image: url(../img/fondo\ port.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textPresentation {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+}
+
+.presentation {
+    padding: 1rem;
+
+}
+
+h1 {
+    font-family: 'Lobster Two', cursive;
+}
+
+.textPresentation img {
+    width: 50%;
+}
+
+h2 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: rgb(26 111 209);
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-size: 18px;
+
+}
+
+
+.aboutMe p {
+    margin: 2rem 2rem 0;
+}
+
+.aboutMe img {
+    margin: .5rem;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 0 0 0 15rem;
+    -webkit-border-radius: 0 0 0 15rem;
+    -moz-border-radius: 0 0 0 15rem;
+    -ms-border-radius: 0 0 0 15rem;
+    -o-border-radius: 0 0 0 15rem;
+}
+
+/* skills */
+
+.skills div {
+    flex-wrap: wrap;
+}
+
+.skills img {
+    width: 110px;
+    padding: 1rem;
+}
+
+.skills img:nth-child(4) {
+    padding: 0;
+}
+
+/* portafolio carrusel  */
+.cardText {
+    margin: 10px 0 15px;
+}
+.cardLinks a:nth-child(1) {
+    color: #7c15cf;
+}
+
+.cardLinks a:nth-child(2) {
+    background-color: #7c15cf;
+    color: white;
+}
+
+.cardLinks a {
+    border: 2px solid #7c15cf;
+    padding: .3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-image: linear-gradient(50deg, #7c15cf 50%, transparent 50%);
+    border-color: #7c15cf;
+    background-position: 100%;
+    background-size: 250%;
+    transition: background 0.4s ease-in-out;
+    -webkit-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    -ms-transition: background 0.4s ease-in-out;
+    -o-transition: background 0.4s ease-in-out;
+}
+
+.cardLinks a:nth-child(1):hover {
+    background-position: 0;
+    color: black;
+}
+
+.cardLinks a:nth-child(2):hover {
+    background-position: 0;
+    text-shadow: 2px 2px 2px black;
+}
+
+.carousel {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.carouselContenedor {
+    position: relative;
+}
+
+.carouselAnterior i,
+.carouselSiguiente i {
+    font-size: 26px;
+}
+
+.carouselAnterior,
+.carouselSiguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: rgb(26 111 209);
+    opacity: 50%;
+}
+
+.carouselAnterior:hover,
+.carouselSiguiente:hover {
+    opacity: 100%;
+}
+
+.carouselAnterior {
+    left: -16px;
+}
+
+.carouselSiguiente {
+    right: -16px;
+}
+
+.carouselLista {
+    overflow: hidden;
+}
+
+.carouselElemento {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.carouselIndicadores .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: rgb(26 111 209);
+    opacity: .2;
+    border-radius: 0;
+}
+
+.carouselIndicadores .glider-dot:hover {
+    opacity: .5;
+}
+
+.carouselIndicadores .glider-dot.active {
+    opacity: 1;
+}
+
+h3 {
+    background-color: rgba(129, 29, 212, 0.88);
+    text-align: center;
+    margin: -.2rem 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    color: #e3e3e3;
+}
+
+/* footer */
+footer img,
+.git a{
+    transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
+}
+
+footer img:hover,
+.git a:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+footer img {
+    width: 3.5rem;
+}
+
+/* icono github */
+.github {
+    font-size: 4rem;
+    color: black;
+}
+
+.linkedinTelegram {
+    justify-content: space-around;
+}
+
+.author p {
+    color: rgb(66, 66, 66);
+    font-size: 14px;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+@media screen and (min-width:820px) {
+
+    .navBar {
+        width: 100px;
+    }
+
+    .btnMenuBurger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        height: 3.5rem;
+        padding-top: 0;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .textPresentation {
+        flex-direction: row-reverse;
+        top: 160px;
+        font-size: 3rem;
+    }
+
+    .aboutMe {
+        flex-direction: row-reverse;
+        width: 750px;
+    }
+
+    .tarjeta {
+        margin: 1.5rem;
+    }
+}
